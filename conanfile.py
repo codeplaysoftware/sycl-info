@@ -63,11 +63,14 @@ class SYCLInfoConan(ConanFile):
     build_requires = "lyra/1.1.0", "jsonformoderncpp/3.7.2@vthiery/stable"
     exports_sources = (
         ".clang*",
+        ".gitignore",
         "cmake/*",
         "CMakeLists.txt",
-        "LICENSE.TXT",
         "imp-finder/*",
         "impl-matchers/*",
+        "LICENSE.TXT",
+        "README.md",
+        "sycl-info-cpack.cmake",
         "sycl-info/*",
         "target-selector/*",
     )
