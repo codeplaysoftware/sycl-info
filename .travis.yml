@@ -1,0 +1,34 @@
+env:
+  global:
+    - CONAN_BUILD_REQUIRES="cmake_installer/3.13.4@conan/stable, ninja/1.9.0"
+    - CONAN_CMAKE_GENERATOR=Ninja
+    - CONAN_PRINT_RUN_COMMANDS=1
+
+linux: &linux
+   os: linux
+   sudo: required
+   language: python
+   python: "3.6"
+   services:
+     - docker
+osx: &osx
+   os: osx
+   language: generic
+matrix:
+   include:
+      - <<: *linux
+        env: CONAN_GCC_VERSIONS=9 CONAN_ARCHS=armv8 CONAN_DOCKER_IMAGE=conanio/gcc9-armv8
+      - <<: *linux
+        env: CONAN_GCC_VERSIONS=5 CONAN_DOCKER_IMAGE=conanio/gcc5
+      - <<: *linux
+        env: CONAN_CLANG_VERSIONS=3.9 CONAN_DOCKER_IMAGE=conanio/clang39
+      - <<: *linux
+        env: CONAN_CLANG_VERSIONS=8 CONAN_ARCHS=x86_64 CONAN_DOCKER_IMAGE=conanio/clang8
+
+install:
+  - chmod +x .travis/install.sh
+  - ./.travis/install.sh
+
+script:
+  - chmod +x .travis/run.sh
+  - ./.travis/run.sh
