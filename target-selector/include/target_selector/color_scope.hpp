@@ -20,7 +20,7 @@
 #ifndef COLOR_SCOPE_H
 #define COLOR_SCOPE_H
 
-#include "target_selector/config.h"
+#include "target_selector/config.hpp"
 
 #include <ostream>
 

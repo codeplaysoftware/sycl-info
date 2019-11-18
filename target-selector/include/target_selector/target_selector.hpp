@@ -20,9 +20,9 @@
 #ifndef UTIL_DEVICE_SELECTOR_H
 #define UTIL_DEVICE_SELECTOR_H
 
-#include "target_selector/config.h"
+#include "target_selector/config.hpp"
 
-#include "color_scope.h"
+#include "color_scope.hpp"
 #include <CL/opencl.h>
 #include <sstream>
 #include <stdexcept>
@@ -164,8 +164,6 @@ template <typename Callback>
 TARGET_SELECTOR_EXPORT std::string trim_end(std::string str);
 
 /*!
-=======
->>>>>>> master
   @brief Boilerplate template that queries an OpenCL function
   @tparam IdType: the type of the id
   For example: cl_platform_id, cl_device_id, etc

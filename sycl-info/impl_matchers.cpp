@@ -17,10 +17,10 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "impl_matchers.h"
+#include "impl_matchers.hpp"
 
 #include <fstream>
-#include <target_selector/target_selector.h>
+#include <target_selector/target_selector.hpp>
 
 namespace sycl_info {
 

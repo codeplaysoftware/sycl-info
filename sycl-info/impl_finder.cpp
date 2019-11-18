@@ -17,12 +17,12 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "sycl_info_imp_finder.h"
+#include "impl_finder.hpp"
 #include <algorithm>
 #include <iostream>
 #include <memory>
 #include <nlohmann/json.hpp>
-#include <target_selector/target_selector.h>
+#include <target_selector/target_selector.hpp>
 
 using json = nlohmann::json;
 
