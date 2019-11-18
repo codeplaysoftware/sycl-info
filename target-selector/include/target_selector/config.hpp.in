@@ -20,6 +20,6 @@
 #ifndef TARGET_SELECTOR_CONFIG_H
 #define TARGET_SELECTOR_CONFIG_H
 
-#include "export.h"
+#include "export.hpp"
 
 #endif

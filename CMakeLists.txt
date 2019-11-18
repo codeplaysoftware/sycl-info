@@ -88,8 +88,6 @@ if(SYCL_INFO_CLANG_TIDY)
 endif()
 
 add_subdirectory(target-selector)
-add_subdirectory(impl-matchers)
-add_subdirectory(imp-finder)
 add_subdirectory(sycl-info)
 
 include(sycl-info-cpack.cmake)

@@ -16,8 +16,8 @@
 // limitations under the License.
 //
 ////////////////////////////////////////////////////////////////////////////////
-#include "target_selector.h"
-#include "color_scope.h"
+#include "target_selector.hpp"
+#include "color_scope.hpp"
 #include <algorithm>
 #include <cctype>
 #include <cstdlib>

@@ -16,8 +16,8 @@
 #include "config.hpp"
 
 #include "cli_config.hpp"
+#include "impl_matchers.hpp"
 #include <cstdlib>
-#include <impl_matchers/impl_matchers.h>
 #include <stdexcept>
 
 /// \brief Generates a configuration object.

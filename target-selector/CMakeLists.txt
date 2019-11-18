@@ -46,8 +46,7 @@ install(TARGETS target-selector EXPORT target-selector-targets
 install(DIRECTORY include
     DESTINATION .
     COMPONENT target-selector-devel
-    FILES_MATCHING PATTERN "*.h"
-                   PATTERN "*.hpp")
+    FILES_MATCHING PATTERN "*.hpp")
 
 set(config_package_location "${CMAKE_INSTALL_LIBDIR}/cmake/target-selector")
 

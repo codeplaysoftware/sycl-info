@@ -20,10 +20,10 @@
 #ifndef SYCL_INFO_IMP_FINDER_H
 #define SYCL_INFO_IMP_FINDER_H
 
+#include "impl_matchers.hpp"
 #include <CL/opencl.h>
 #include <algorithm>
 #include <fstream>
-#include <impl_matchers/impl_matchers.h>
 #include <nlohmann/json.hpp>
 #include <string>
 #include <vector>

@@ -19,7 +19,7 @@
 #include "config.hpp"
 
 #include "utility.hpp"
-#include <imp_finder/sycl_info_imp_finder.h>
+#include "impl_finder.hpp"
 #include <lyra/lyra.hpp>
 #include <ostream>
 #include <sstream>

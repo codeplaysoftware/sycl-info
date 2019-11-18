@@ -20,18 +20,19 @@ configure_file(config.hpp.in ${CMAKE_CURRENT_BINARY_DIR}/config.hpp)
 
 add_executable(sycl-info)
 target_sources(sycl-info PRIVATE
+    ${CMAKE_CURRENT_BINARY_DIR}/config.hpp
     cli_config.hpp
+    impl_finder.hpp impl_finder.cpp
+    impl_matchers.hpp impl_matchers.cpp
     sycl_info.cpp
     utility.hpp
-    ${CMAKE_CURRENT_BINARY_DIR}/config.hpp
 )
 target_include_directories(sycl-info PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
 target_link_libraries(sycl-info PRIVATE
     Lyra::Lyra
     Codeplay::target-selector
-    Codeplay::impl-matchers
-    Codeplay::imp-finder
-    nlohmann_json)
+    nlohmann_json
+)
 
 install(TARGETS sycl-info EXPORT sycl-info-targets
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
