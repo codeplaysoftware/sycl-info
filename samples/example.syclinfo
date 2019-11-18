@@ -1,0 +1,97 @@
+{
+"name":"ComputeCpp CE",
+"vendor":"Codeplay",
+"version":"1.1.5",
+  "supported_configurations": [
+    {
+      "platform_name": "Intel(R) CPU Runtime for OpenCL(TM) Applications",
+      "platform_vendor": "Intel(R) Corporation",
+      "device_type": "CPU",
+      "device_name": "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz",
+      "device_vendor": "Intel(R) Corporation",
+      "supported_drivers": [],
+      "supported_backend_targets": [
+        {
+          "backend_target": "SPIR",
+          "device_flags": "-sycl -sycl-target=spir"
+        },
+        {
+          "backend_target": "SPIRV",
+          "device_flags": "-sycl -sycl-target=spriv"
+        }
+      ]
+    },
+    {
+      "platform_name": "Experimental OpenCL 2.1 CPU Only Platform",
+      "platform_vendor": "Intel(R) Corporation",
+      "device_type": "CPU",
+      "device_name": "Core(TM) i7-6700K CPU @ 4.00GHz",
+      "device_vendor": "Intel(R) Corporation",
+      "supported_drivers": [],
+      "supported_backend_targets": [
+        {
+          "backend_target": "SPIR",
+          "device_flags": "-sycl -sycl-target=spir"
+        },
+        {
+          "backend_target": "SPIRV",
+          "device_flags": "-sycl -sycl-target=spriv"
+        }
+      ]
+    },
+    {
+      "platform_name": "Intel(R) OpenCL",
+      "platform_vendor": "Intel(R) Corporation",
+      "device_type": "CPU",
+      "device_name": "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz",
+      "device_vendor": "Intel(R) Corporation",
+      "supported_drivers": [],
+      "supported_backend_targets": [
+        {
+          "backend_target": "SPIR",
+          "device_flags": "-sycl -sycl-target=spir"
+        },
+        {
+          "backend_target": "SPIRV",
+          "device_flags": "-sycl -sycl-target=spriv"
+        }
+      ]
+    },
+    {
+      "platform_name": "Intel(R) OpenCL HD Graphics",
+      "platform_vendor": "Intel(R) Corporation",
+      "device_type": "CPU",
+      "device_name": "Intel(R) Gen9 HD Graphics NEO",
+      "device_vendor": "Intel(R) Corporation",
+      "supported_drivers": [],
+      "supported_backend_targets": [
+        {
+          "backend_target": "SPIR",
+          "device_flags": "-sycl -sycl-target=spir"
+        },
+        {
+          "backend_target": "SPIRV",
+          "device_flags": "-sycl -sycl-target=spriv"
+        }
+      ]
+    },
+    {
+      "platform_name": "Intel(R) OpenCL",
+      "platform_vendor": "Intel(R) Corporation",
+      "device_type": "GPU",
+      "device_name": "Intel(R) HD Graphics 530",
+      "device_vendor": "Intel(R) Corporation",
+      "supported_drivers": [],
+      "supported_backend_targets": [
+        {
+          "backend_target": "SPIR",
+          "device_flags": "-sycl -sycl-target=spir"
+        },
+        {
+          "backend_target": "SPIRV",
+          "device_flags": "-sycl -sycl-target=spriv"
+        }
+      ]
+    }
+  ]
+}
