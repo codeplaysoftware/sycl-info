@@ -29,6 +29,15 @@ pkg-config target-selector --cflags --libs
 </pre>
         </td>
     </tr>
+    <tr>
+        <td>
+            <b>Arch Linux AUR</b><br>
+            <img alt="AUR version" src="https://img.shields.io/aur/version/sycl-info-git?label=sycl-info-git&style=flat-square">
+        </td>
+        <td>
+            <pre>yay -S sycl-info-git</pre>
+        </td>
+    </tr>
 </table>
 
 ### Using sycl-info
@@ -40,7 +49,7 @@ This is also generated as an HTML and additionally as a man page on Linux.
 You can find the generated html document here:
 
 ```
-<sycl_info_install_dir>/package/share/doc/sycl-info.1.html
+<sycl_info_install_dir>/share/doc/sycl-info.1.html
 ```
 
 #### Linux:
@@ -48,7 +57,7 @@ You can find the generated html document here:
 On Linux you can view the man page by doing:
 
 ```
-man <sycl_info_install_dir>/package/share/man/man1/sycl-info.1
+man <sycl_info_install_dir>/share/man/man1/sycl-info.1
 ```
 
 ## Building
@@ -78,7 +87,7 @@ conan package sycl-info -bf build/ -pf install/
 
 ### Plain CMake
 
-For an example of how a complete script looks like refer to the PKGBUILD.
+For an example of how a complete script looks like refer to the [PKGBUILD on the AUR](https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=sycl-info-git).
 
 #### Dependencies
 
@@ -106,7 +115,7 @@ git clone https://github.com/bfgroup/Lyra Lyra
 git clone https://github.com/onqtam/doctest doctest # Only needed for the tests
 gem install ronn # Only needed to build the man page
 cp -r OpenCL-Headers/CL install/include/
-cp -r Lyra/include/lyra install/include
+cp -r Lyra/include/lyra install/include/
 
 for dep in OpenCL-ICD-Loader json doctest; do
     mkdir ${dep}-build
@@ -125,15 +134,6 @@ cmake -S sycl-info -B build \
     -DCMAKE_INSTALL_PREFIX=install \
     -DCMAKE_BUILD_TYPE=Release
 cmake --build build/ --target install
-```
-
-### Arch Linux
-
-Note that this PKGBUILD serves a full example of how the project is supposed to
-be packaged for a Linux distribution and will be moved to the AUR in the future.
-
-```bash
-makepkg -si
 ```
 
 ## Packaging
