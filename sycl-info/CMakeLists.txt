@@ -63,7 +63,7 @@ install(
   DESTINATION ${config_package_location}
   COMPONENT sycl-info-devel)
 
-install(FILES "${PROJECT_SOURCE_DIR}/LICENSE.TXT"
+install(FILES "${PROJECT_SOURCE_DIR}/LICENSES.TXT"
     DESTINATION share/licenses/sycl-info
     COMPONENT sycl-info-base)
 

@@ -75,7 +75,7 @@ install(
   DESTINATION ${config_package_location}
   COMPONENT target-selector-devel)
 
-install(FILES "${PROJECT_SOURCE_DIR}/LICENSE.TXT"
+install(FILES "${PROJECT_SOURCE_DIR}/LICENSES.TXT"
     DESTINATION share/licenses/target-selector
     COMPONENT target-selector-base)
 
