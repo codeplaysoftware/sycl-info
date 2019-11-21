@@ -68,7 +68,7 @@ class SYCLInfoConan(ConanFile):
         "CMakeLists.txt",
         "imp-finder/*",
         "impl-matchers/*",
-        "LICENSE.TXT",
+        "LICENSES.TXT",
         "README.md",
         "sycl-info-cpack.cmake",
         "sycl-info/*",
@@ -123,7 +123,7 @@ class SYCLInfoConan(ConanFile):
 
     def package(self):
         self.cmake.install()
-        self.copy("LICENSE.TXT",
+        self.copy("LICENSES.TXT",
                   dst=os.path.join(self.package_folder, "share", "licenses",
                                    "sycl-info"))
 

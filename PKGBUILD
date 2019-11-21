@@ -43,7 +43,7 @@ package_sycl-info() {
     depends=('target-selector')
     optdepends=('computecpp' 'trisycl-git' 'hipsycl-git')
 
-    install -Dm 0644 "$startdir/LICENSE.TXT" "$pkgdir/usr/share/licenses/$pkgname/LICENSE.TXT"
+    install -Dm 0644 "$startdir/LICENSES.TXT" "$pkgdir/usr/share/licenses/$pkgname/LICENSES.TXT"
     DESTDIR="$pkgdir/" ninja install
 }
 
@@ -51,6 +51,6 @@ package_target-selector() {
     pkgdesc="SYCL target selector"
     depends=('ocl-icd')
 
-    install -Dm 0644 "$startdir/LICENSE.TXT" "$pkgdir/usr/share/licenses/$pkgname/LICENSE.TXT"
+    install -Dm 0644 "$startdir/LICENSES.TXT" "$pkgdir/usr/share/licenses/$pkgname/LICENSES.TXT"
     DESTDIR="$pkgdir/" ninja install
 }
