@@ -5,6 +5,7 @@ environment:
     CONAN_BUILD_REQUIRES: "cmake_installer/3.13.4@conan/stable, ninja/1.9.0"
     CONAN_CMAKE_GENERATOR: Ninja
     CONAN_PRINT_RUN_COMMANDS: 1
+    CONAN_USERNAME: codeplay
     PYTHON_HOME: "C:\\Python37"
 
     matrix:
